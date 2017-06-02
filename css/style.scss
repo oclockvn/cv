@@ -84,7 +84,7 @@ a {
 
 .block__info {
     border-left: 1px solid rgba(33, 150, 243, 0.5);
-    padding-left: 16px;
+    padding-left: 20px;
 }
 
 .block {
@@ -94,7 +94,7 @@ a {
 
 .block .block__title {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 300;
     /* padding: 4px 0; */
     font-size: 1.25em;
     color: #2196f3;
@@ -113,10 +113,13 @@ blockquote span {
 
 .time span {
     background: #2196f3;
-    padding: 4px 12px;
+    // padding: 4px 12px;
     border-radius: 20px;
     color: #fff;
     display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 16px;
 }
 
 .timestamp {
@@ -133,4 +136,19 @@ blockquote span {
     z-index: 1;
     content: "";
     bottom: 0;
+}
+
+.widget__content .chip {
+    margin-top: 8px;
+}
+
+.widget__title {
+    text-transform: uppercase;
+    padding: 4px 16px;
+}
+
+.bgc-red-500.chip {
+    .chip__label {
+        color: #fff;
+    }
 }
