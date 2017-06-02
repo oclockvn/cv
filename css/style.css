@@ -123,4 +123,49 @@ blockquote span {
 .bgc-red-500.chip .chip__label {
   color: #fff; }
 
+.project {
+  /* border: 1px solid; */
+  position: relative;
+  overflow: auto;
+  max-width: 294px;
+  max-height: 294px; }
+
+.proj__hack {
+  margin-top: 100%; }
+
+.proj__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end; }
+
+.proj-info {
+  width: 100%;
+  background: linear-gradient(to top, black, transparent);
+  color: #fff;
+  padding: 64px 16px 16px; }
+
+.proj-info > div:first-child {
+  text-transform: uppercase;
+  font-size: 1.4em; }
+
+.proj-info span {
+  font-size: .9em;
+  margin-right: 8px;
+  color: #888; }
+
+.proj__content {
+  background-size: cover; }
+  .proj__content.first {
+    background: url(images/blog.png); }
+  .proj__content.first {
+    background: url(images/blog.png); }
+  .proj__content.thir {
+    background: url(images/blog.png); }
+
 /*# sourceMappingURL=style.css.map */

@@ -152,3 +152,60 @@ blockquote span {
         color: #fff;
     }
 }
+
+.project {
+    /* border: 1px solid; */
+    position: relative;
+    overflow: auto;
+    max-width: 294px;
+    max-height: 294px;
+}
+
+.proj__hack {
+    margin-top: 100%;
+}
+
+.proj__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+}
+
+.proj-info {
+    width: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    color: #fff;
+    padding: 64px 16px 16px;
+}
+
+.proj-info > div:first-child {
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+.proj-info span {
+    font-size: .9em;
+    margin-right: 8px;
+    color: #888;
+}
+
+.proj__content {
+    // background: url(images/blog.png);
+    background-size: cover;
+
+    &.first {
+        background: url(images/blog.png);
+    }
+    &.first {
+        background: url(images/blog.png);
+    }
+    &.thir {
+        background: url(images/blog.png);
+    }
+}
