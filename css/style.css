@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   font-family: roboto, sans-serif; }
 
 .cv-user img {
@@ -19,7 +20,8 @@ html, body {
 .contact div span {
   color: #fff; }
 
-html, body {
+html,
+body {
   font-size: 14px; }
 
 .contact {
@@ -116,6 +118,15 @@ blockquote span {
 .widget__content .chip {
   margin-top: 8px; }
 
+.widget__content .card {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 .widget__title {
   text-transform: uppercase;
   padding: 4px 16px; }
@@ -128,7 +139,9 @@ blockquote span {
   position: relative;
   overflow: auto;
   max-width: 294px;
-  max-height: 294px; }
+  max-height: 294px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .proj__hack {
   margin-top: 100%; }
@@ -150,7 +163,7 @@ blockquote span {
   color: #fff;
   padding: 64px 16px 16px; }
 
-.proj-info > div:first-child {
+.proj-info > .proj-about {
   text-transform: uppercase;
   font-size: 1.4em; }
 
@@ -159,13 +172,67 @@ blockquote span {
   margin-right: 8px;
   color: #888; }
 
+.proj-info a {
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
 .proj__content {
   background-size: cover; }
   .proj__content.first {
-    background: url(images/blog.png); }
-  .proj__content.first {
-    background: url(images/blog.png); }
-  .proj__content.thir {
-    background: url(images/blog.png); }
+    background-image: url(../images/blog.png); }
+  .proj__content.second {
+    background-image: url(../images/vaobong.png); }
+  .proj__content.third {
+    background-image: url(../images/ecommerce.png); }
+
+.call-me {
+  margin: 64px 0px; }
+
+.call-me .mdi {
+  position: relative; }
+
+.call-me .mdi:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2196f3;
+  z-index: -1;
+  animation: waves 1.6s cubic-bezier(1, 0.24, 0.12, 0.89) infinite both;
+  border-radius: 50%; }
+
+@keyframes waves {
+  50% {
+    transform: scale(2);
+    opacity: .3; } }
+@media screen and (min-width: 640px) {
+  .timestamp {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+@media screen and (max-width: 639px) {
+  .block__info {
+    border: none;
+    padding: 0; }
+
+  .timestamp .ico {
+    display: none; }
+
+  .timestamp .time {
+    text-align: left;
+    margin-bottom: 8px; }
+
+  .timestamp:before {
+    display: none; }
+
+  .credit {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
