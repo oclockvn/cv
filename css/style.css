@@ -3,3 +3,151 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html, body {
+  font-family: 'Segoe UI', Roboto, Arial, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container .col-3 {
+  flex: 3;
+}
+
+.container .col-7 {
+  flex: 7;
+}
+
+.flex-fill {
+  flex: 1;
+}
+
+.header {
+  padding: 2rem 0;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.name {
+  font-size: 5rem;
+}
+
+.avatar {
+  margin-right: 1rem;
+}
+
+.avatar img {
+  display: block;
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid #aaa;
+  max-width: 164px;
+}
+
+.contacts {
+  background: #2196f3;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.contact {
+  padding: .5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact > span {
+  display: inline-block;
+  min-width: 60px;
+  font-size: .85rem;
+}
+
+.contact a {
+  color: #fff;
+}
+
+footer {
+  background: #2196f3;
+  font-size: .75rem;
+  padding: .5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.block {
+  margin: 1rem 0;
+}
+
+.block > header {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.block > header:first-letter {
+  background: #2196f3;
+  color: #fff;
+  padding: 0 .5rem;
+  font-size: 2em;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.block article {
+  padding: .5rem 0;
+}
+
+.block article > h4 {
+  font-size: 1rem;
+}
+
+.block article .body p {
+  margin-top: .5rem;
+  margin-left: 1rem;
+  list-style: disclosure-closed;
+  display: list-item;
+}
+
+.block--exp > article {
+  padding-bottom: 1rem;
+}
+
+.block--exp > article + article {
+  border-top: 1px dashed #aaa;
+}
+
+.tags > span {
+  display: inline-block;
+  margin: 0 4px 8px 0;
+  padding: 4px 16px;
+  font-size: .85rem;
+  background: rgba(33, 150, 243, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+  color: #333;
+}
+
+.tags > span.strong {
+  background: rgba(33, 150, 243, 0.7);
+}
+
+.tags > span.strong.x2 {
+  background: #2196f3;
+}
+
+.pr {
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
+}
