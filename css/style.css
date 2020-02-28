@@ -54,7 +54,7 @@ html, body {
 
 .contacts {
   background: #2196f3;
-  padding: 1rem 0;
+  padding: 3rem 0;
   color: #fff;
 }
 
@@ -83,7 +83,7 @@ footer {
 }
 
 .block {
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 .block > header {
@@ -101,7 +101,7 @@ footer {
 }
 
 .block article {
-  padding: .5rem 0;
+  padding: 1rem 0 1.5rem 0;
 }
 
 .block article > h4 {
@@ -113,10 +113,6 @@ footer {
   margin-left: 1rem;
   list-style: disclosure-closed;
   display: list-item;
-}
-
-.block--exp > article {
-  padding-bottom: 1rem;
 }
 
 .block--exp > article + article {
