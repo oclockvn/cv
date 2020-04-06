@@ -138,7 +138,6 @@ footer {
 .block article .body p {
   margin-top: .5rem;
   margin-left: 1rem;
-  list-style: disclosure-closed;
   display: list-item;
 }
 
@@ -186,6 +185,23 @@ footer {
   margin-right: calc(-1 * var(--sizing));
   padding-left: var(--sizing);
   padding-right: var(--sizing);
+}
+
+.company {
+  display: flex;
+  align-items: baseline;
+}
+
+.company__name {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: .9rem;
+  margin-left: .25rem;
+}
+
+.company__time {
+  margin-left: 1rem;
+  font-style: italic;
 }
 
 @media screen and (max-width: 768px) {
