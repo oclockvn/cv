@@ -1,5 +1,10 @@
 :root {
   --primary: #7e57c2;
+  --body-bg: #eee;
+  --header-bg: #fff;
+  --block-bg: #fff;
+  --separator-color: #eee;
+  --sizing: 1.5rem;
   --icon-w: 32px;
 }
 
@@ -11,6 +16,7 @@
 
 html, body {
   font-family: 'Segoe UI', Roboto, Arial, Verdana, sans-serif;
+  background: var(--body-bg);
 }
 
 a {
@@ -39,6 +45,7 @@ a {
 
 .header {
   padding: 2rem 0;
+  background: var(--header-bg);
 }
 
 .align-center {
@@ -100,20 +107,23 @@ footer {
 
 .block {
   margin: 3rem 0;
+  background: var(--block-bg);
+  padding: 1rem var(--sizing);
+  border-radius: 4px;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
 }
 
 .block > header {
   font-size: 1.5rem;
   text-transform: capitalize;
-}
-
-.block > header:first-letter {
-  background: var(--primary);
-  color: #fff;
-  padding: 0 .5rem;
-  font-size: 2em;
-  font-weight: 800;
-  display: inline-block;
+  margin-left: calc(-1 * var(--sizing));
+  margin-right: calc(-1 * var(--sizing));
+  padding: .25rem 2rem .25rem 1rem;
+  border-left: .5rem solid var(--primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: rgba(126, 87, 194, .1);
 }
 
 .block article {
@@ -122,6 +132,7 @@ footer {
 
 .block article > h4 {
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .block article .body p {
@@ -131,8 +142,12 @@ footer {
   display: list-item;
 }
 
+.block--exp article {
+  padding: var(--sizing);
+}
+
 .block--exp > article + article {
-  border-top: 1px dashed #aaa;
+  border-top: 1px solid var(--separator-color);
 }
 
 .tags > span {
@@ -164,6 +179,13 @@ footer {
 
 .bg-main {
   background: var(--primary);
+}
+
+.n-sizing {
+  margin-left: calc(-1 * var(--sizing));
+  margin-right: calc(-1 * var(--sizing));
+  padding-left: var(--sizing);
+  padding-right: var(--sizing);
 }
 
 @media screen and (max-width: 768px) {
