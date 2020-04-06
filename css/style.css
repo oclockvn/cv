@@ -123,7 +123,7 @@ footer {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
-  background: rgba(126, 87, 194, .1);
+  background: rgba(126, 87, 194, .07);
 }
 
 .block article {
@@ -206,6 +206,14 @@ footer {
 
 @media screen and (max-width: 768px) {
   .container {
+    display: block;
+  }
+
+  .pr {
+    padding-right: 0;
+  }
+
+  .company {
     display: block;
   }
 }
